@@ -1,1 +1,1 @@
-# obenkyo-php
+PHPのお勉強用リポジトリです。
