@@ -1,1 +1,1 @@
-[PHP Manual](http://php.net/manual/ja/language.exceptions.php)
+ref: [exceptions - PHP Manual](http://php.net/manual/ja/language.exceptions.php)
