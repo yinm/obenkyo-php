@@ -20,7 +20,9 @@ class FooTest extends TestCase
             ->method('getSomething')
             ->will($this->returnValue(1));
 
-        $foo = new Foo($bar);
+        $foo = new Foo;
+        $foo->setBar($bar);
+
         $this->assertTrue($foo->play());
     }
 }

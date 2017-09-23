@@ -7,9 +7,9 @@ class Foo
 {
     protected $bar;
 
-    public function __construct(Bar $bar = null)
+    public function setBar(Bar $bar)
     {
-        $this->bar = $bar ? $bar : new Bar;
+        $this->bar = $bar;
     }
 
     public function play()
