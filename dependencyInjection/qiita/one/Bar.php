@@ -5,6 +5,6 @@ class Bar
 {
     public function getSomething()
     {
-        return 1;
+        return 2;
     }
 }
