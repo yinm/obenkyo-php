@@ -1,0 +1,1 @@
+Ref: [依存性注入(DI)の解説とやり方](https://qiita.com/1000k/items/aef6aed46b0fc34cc15e)
