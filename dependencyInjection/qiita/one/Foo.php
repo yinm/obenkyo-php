@@ -5,10 +5,8 @@ require_once __DIR__ . '/Bar.php';
 
 class Foo
 {
-    public function play()
+    public function play(Bar $bar)
     {
-        $bar = new Bar;
-
         if ($bar->getSomething() === 1) {
             return true;
         }
