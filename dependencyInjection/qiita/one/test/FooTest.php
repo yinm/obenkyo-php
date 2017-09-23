@@ -12,15 +12,15 @@ class FooTest extends TestCase
      */
     public function play()
     {
-        $foo = new Foo;
-
         $bar = $this->getMockBuilder(Bar::class)
-                    ->setMethods(['getSomeThing'])
+                    ->setMethods(['getSomething'])
                     ->getMock();
+
         $bar->expects($this->any())
             ->method('getSomething')
             ->will($this->returnValue(1));
 
-        $this->assertTrue($foo->play($bar));
+        $foo = new Foo($bar);
+        $this->assertTrue($foo->play());
     }
 }

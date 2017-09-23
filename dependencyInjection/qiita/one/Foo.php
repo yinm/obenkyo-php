@@ -5,9 +5,16 @@ require_once __DIR__ . '/Bar.php';
 
 class Foo
 {
-    public function play(Bar $bar)
+    protected $bar;
+
+    public function __construct(Bar $bar = null)
     {
-        if ($bar->getSomething() === 1) {
+        $this->bar = $bar ? $bar : new Bar;
+    }
+
+    public function play()
+    {
+        if ($this->bar->getSomething() === 1) {
             return true;
         }
 
