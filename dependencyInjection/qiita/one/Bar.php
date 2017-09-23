@@ -1,4 +1,5 @@
 <?php
+namespace dependencyInjection\qiita\one;
 
 class Bar
 {
